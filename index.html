@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerie.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Andy Julião</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo"> Andy Julião</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#experiencias" onclick="toggleMenu()">Experiências</a></li>
+                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assests/profile1.png" alt="Andy Juliao profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Olá, eu sou</p>
+            <h1 class="title">Andy Julião</h1>
+            <p class="section__text__p2">Cientista de Dados</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href = './#contato'">Contato</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assests/linkedin.png" alt="Meu LinkedIn" class="icon" onclick="location.href = 'https://www.linkedin.com/in/anderson-julião/'">
+                <img src="./assests/github.png" alt="Meu GitHub" class="icon" onclick="location.href = 'https://github.com/AndyOJuliao'">
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+        <p class="section__text__p1">Saiba Mais</p>
+        <h1 class="title">Sobre Mim</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assests/profile2.png" alt="Foto de Perfil" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="detail-container">
+                        <img src="/assests/experience.png" alt="experience icon" class="icon">
+                        <h3>Experiências</h3>
+                        <p>2+ anos <br>Cientista de Dados</p>
+                    </div>
+                    <div class="detail-container">
+                        <img src="/assests/experience.png" alt="education icon" class="icon">
+                        <h3>Educação</h3>
+                        <p>Bacharelado <br>Data Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, quisquam delectus. Suscipit totam non molestias optio exercitationem ullam vitae dolor natus. Ipsa consectetur dolorum eius illum cum, iste vitae adipisci? <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href ='./#experiencias'">
+    </section>
+    <section id="experiencias">
+        <p class="section__text__p1">Explore minhas</p>
+        <h1 class="title">Experiências</h1>
+        <div class="experience-details-container"></div>
+        <div class="about-container">
+            <div class="detail-container">
+                <h2 class="experience-sub-title">Cientista de Dados | Analista de Dados</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assests/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Tableau</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assests/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Power BI</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assests/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Python</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assests/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>SQL</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assests/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Power Query</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assests/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Linguagem DAX</h3>
+                            <p>Intermediário</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href ='./#projetos'">
+    </section>
+    <section id="projetos">
+        <p class="section__text__p1">Navegue pelos meus recentes</p>
+        <h1 class="title">Projetos</h1>
+        <div class="experience-detail-container">
+        <div class="about-container">
+            <div class="detail-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assests/project-1.png" alt="Project 1"class="project-img"/>
+                  <h2 class="experience-sub-title project-title">1° Projeto</h2>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'">
+                  Github
+                </button>
+                </div>
+            </div>
+            <div class="detail-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assests/project-1.png" alt="Project 1"class="project-img"/>
+                    <h2 class="experience-sub-title project-title">2° Projeto</h2>
+                </div>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'">
+                    Github
+                  </button>
+                  </div>
+              </div>
+              <div class="detail-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assests/project-1.png" alt="Project 1"class="project-img"/>
+                    <h2 class="experience-sub-title project-title">3° Projeto</h2>
+                </div>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'">
+                    Github
+                  </button>
+                  </div>
+              </div>
+              <div class="detail-container color-container">
+                <div class="article-container">
+                  <img
+                    src="./assests/project-1.png" alt="Project 1"class="project-img"/>
+                    <h2 class="experience-sub-title project-title">4° Projeto</h2>
+                </div>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/'">
+                    Github
+                  </button>
+                  </div>
+              </div>
+        </div>
+        <img src="./assests/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href ='./#contato'">
+    </section>
+    <section id="contato">
+        <p class="section__text__p1">Entre em contato</p>
+        <h1 class="title">Comigo</h1>
+        <div class="contato-info-upper-container">
+        <div class="about-container">
+            <div class="contato-info-container">
+                <img src="./assests/email.png" alt="email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:anderson2014ifsp@gmail.com">anderson2014ifsp@gmail.com</a></p>
+            </div>
+            <div class="contato-info-upper-container">
+            <div class="contato-info-container">
+                <img src="./assests/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/anderson-julião">LinkedIn</a></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencias">Experiências</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Andy Julião. Todos os direitos reservados</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
